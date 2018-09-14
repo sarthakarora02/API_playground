@@ -8,7 +8,14 @@ auth.set_access_token(twitter_credentials.access_token, twitter_credentials.acce
 api = tweepy.API(auth)
 
 public_tweets = api.home_timeline()
-
-#get json(its in unicode) from status and access as dictionary
-json_unicode = public_tweets[0]._json
-print(json_unicode.get("entities"))
+media_urls = []
+for tweet in public_tweets:
+    #get json(its in unicode) from status and access as dictionary
+    json_dict = tweet._json
+    #reading the media object from the entities
+    media_list = json_dict.get("entities").get("media")
+    #iterating through the media object to look for photos and add media_url to list
+    for media in media_list:
+        if(media.get("type") == "photo"):
+            media_urls.append(media.get("media_url"))
+print media_urls
