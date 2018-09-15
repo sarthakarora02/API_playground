@@ -4,6 +4,7 @@ import json
 import os
 import urllib
 import shutil
+import subprocess
 
 auth = tweepy.OAuthHandler(twitter_credentials.consumer_key, twitter_credentials.consumer_secret)
 auth.set_access_token(twitter_credentials.access_token, twitter_credentials.access_secret)
@@ -17,6 +18,7 @@ for tweet in public_tweets:
     json_dict = tweet._json
     #reading the media object from the entities and extended entities object
     media_list=[]
+    #TODO improve this logic as its not getting all images and skipping tweets I think
     if(json_dict.get("entities").get("media")!=None):
         media_list = json_dict.get("entities").get("media")
     elif(json_dict.get("extended_entities")!=None):
@@ -51,3 +53,10 @@ if(path_made):
     for img in media_urls:
         urllib.urlretrieve(img, "img_%03i.jpg"%i)
         i=i+1
+
+#Attempting the FFMPEG module integration
+
+#for command line
+#ffmpeg -r 1 -i img_%03d.jpg -vcodec mpeg4 -y movie.mp4
+code=subprocess.call(['ffmpeg', '-r', '1', '-i', 'img_%03d.jpg', '-vcodec', 'mpeg4', '-y', 'vid.mp4'])
+print ('Video Process:',code,'\n')
