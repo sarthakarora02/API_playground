@@ -40,6 +40,14 @@ if not os.path.exists(curr_path+"/twitter_images"):
 else:
     print "Path already exists. Please Delete before proceeding\n"
 
+#data_%03i.dat" % i
+#filename = 'data_%d.dat'%(i,)
+
+#If required path is made. Download images from media_urls list
 if(path_made):
     os.chdir(new_path)
-    urllib.urlretrieve("http://www.gunnerkrigg.com//comics/00000001.jpg", "image0001.jpg")
+    i=0
+    print "Downloading Twitter images"
+    for img in media_urls:
+        urllib.urlretrieve(img, "img_%03i.jpg"%i)
+        i=i+1
