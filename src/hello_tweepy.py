@@ -1,6 +1,9 @@
 import tweepy
 import twitter_credentials
 import json
+import os
+import urllib
+
 
 auth = tweepy.OAuthHandler(twitter_credentials.consumer_key, twitter_credentials.consumer_secret)
 auth.set_access_token(twitter_credentials.access_token, twitter_credentials.access_secret)
@@ -21,4 +24,13 @@ for tweet in public_tweets:
     for media in media_list:
         if(media.get("type") == "photo"):
             media_urls.append(media.get("media_url"))
-print media_urls
+
+if(len(media_urls)>0):
+    print("Images received from Twitter.\n")
+
+#New path for downloading images to
+curr_path = os.getcwd()
+new_path = curr_path + '/twitter_images'
+if not path os.path.exists(curr_path+"/twitter_images"):
+    print "Creating path for images\n"
+       os.makedirs(new_path)
