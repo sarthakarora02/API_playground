@@ -3,6 +3,7 @@ from google.cloud import videointelligence
 
 def analyse (path):
     os.chdir(path)
+    os.chdir("../")
     """Detect labels given a file path."""
     video_client = videointelligence.VideoIntelligenceServiceClient()
     features = [videointelligence.enums.Feature.LABEL_DETECTION]
