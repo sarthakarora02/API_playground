@@ -1,5 +1,6 @@
 import get_images
 import make_video
+import analyse_images_video
 
 if __name__ == "__main__":
     img_path = get_images.read_twitter()
@@ -10,5 +11,6 @@ if __name__ == "__main__":
         if (val==1):
             ans = analyse_images_video.analyse(img_path)
         else:
+            print "Video not obtained."
     else:
         print "Error occurred in fetching data from Twitter"
