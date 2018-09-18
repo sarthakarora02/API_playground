@@ -29,6 +29,8 @@ for tweet in public_tweets:
 
 if(len(media_urls)>0):
     print("Images received from Twitter.\n")
+else:
+        print("No images received. Try again.\n")
 
 #New path for downloading images to
 curr_path = os.getcwd()
