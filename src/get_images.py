@@ -60,7 +60,7 @@ def read_twitter():
                 for img in media_urls:
                     urllib.urlretrieve(img, "img_%03i.jpg"%i)
                     i=i+1
-                return 1
+                return new_path
             else:
                 "Path couldn't be created. Try again.\n"
                 return 0
