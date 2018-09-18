@@ -8,7 +8,7 @@ def analyse (path):
     video_client = videointelligence.VideoIntelligenceServiceClient()
     features = [videointelligence.enums.Feature.LABEL_DETECTION]
 
-    with open('./vid.mp4', 'rb') as movie:
+    with open('./twitter_images/vid.mp4', 'rb') as movie:
         input_content = movie.read()
 
     operation = video_client.annotate_video(
