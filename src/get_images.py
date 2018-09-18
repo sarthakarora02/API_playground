@@ -49,7 +49,7 @@ def read_twitter():
                 os.makedirs(new_path)
                 path_made = True
             else:
-                print "Path already exists. Please Delete before proceeding\n"
+                print "Path already exists. Please Delete ./twitter images before proceeding\n"
                 return 0
 
             #If required path is made. Download images from media_urls list
