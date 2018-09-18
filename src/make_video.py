@@ -6,7 +6,7 @@ def make_vid(path):
     #ffmpeg -r 1 -i img_%03d.jpg -vcodec mpeg4 -y movie.mp4
     os.chdir(path)
     try:
-        code=subprocess.call(['ffmpeg', '-r', '1', '-i', 'img_%03d.jpg', '-vcodec', 'mpeg4', '-y', 'vid.mp4'])
+        code=subprocess.call(['ffmpeg', '-r', '1/5', '-i', 'img_%03d.jpg', '-vcodec', 'mpeg4', '-y', 'vid.mp4'])
         print ('Video Process: ',code,'\n')
         if(code==0):
             print "Video built successfully"
