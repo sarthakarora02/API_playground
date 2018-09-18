@@ -10,7 +10,10 @@ auth.set_access_token(twitter_credentials.access_token, twitter_credentials.acce
 
 api = tweepy.API(auth)
 
-public_tweets = api.home_timeline()
+try:
+    public_tweets = api.home_timeline()
+except:
+    print "Tweets couldn't be obtained"
 media_urls = []
 for tweet in public_tweets:
     #get json(its in unicode) from status and access as dictionary
