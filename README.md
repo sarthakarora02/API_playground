@@ -21,7 +21,7 @@ uses Google's Video Intelligence API to describe the content of the video.
 
 ## Example Output
 
-
+601_Mini_project_APIs/src/Screen Shot 2018-09-18 at 11.02.56 PM.png
 
 ## References
 
