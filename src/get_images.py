@@ -28,10 +28,9 @@ def read_twitter():
             media_list=[]
             #print json.dumps(json_dict, indent = 4)
             #print "\n"
-            #TODO improve this logic as its not getting all images and skipping tweets I think
             if(json_dict.get("entities").get("media")!=None):
                 media_list = json_dict.get("entities").get("media")
-            elif(json_dict.get("extended_entities")!=None):
+            elif(json_dict.get("entities").get("media")!=None and json_dict.get("extended_entities")!=None):
                 media_list = json_dict.get("extended_entities").get("media")
             #iterating through the media object to look for photos and add media_url to list
             for media in media_list:
