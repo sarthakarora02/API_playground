@@ -19,6 +19,10 @@ uses Google's Video Intelligence API to describe the content of the video.
 * Run using: python main.py
 * images from twitter are stored in the format: img_%03d.jpg
 
+## Example Output
+
+
+
 ## References
 
 * Google Cloud Video Intelligence API python Frame level and video level example referred from https://cloud.google.com/video-intelligence/docs/label-tutorial
