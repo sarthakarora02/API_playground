@@ -31,8 +31,8 @@ def analyse (path):
         #print('Frame label description: {}'.format(frame_label.entity.description))
         print('Frame label description: ' + frame_label.entity.description.encode('utf-8'))
         for category_entity in frame_label.category_entities:
-            print('\tLabel category description: {}'.format(category_entity.description))
-
+            #print('\tLabel category description: {}'.format(category_entity.description))
+            print('\tLabel category description: ' + category_entity.description.encode('utf-8'))
         # Each frame_label_annotation has many frames,
         a=0
         for frame in frame_label.frames:
