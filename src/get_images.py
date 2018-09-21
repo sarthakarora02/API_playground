@@ -5,29 +5,30 @@ import os
 import urllib
 import shutil
 
-def read_twitter():
+def read_twitter(twitter_handle):
     auth = tweepy.OAuthHandler(twitter_credentials.consumer_key, twitter_credentials.consumer_secret)
     auth.set_access_token(twitter_credentials.access_token, twitter_credentials.access_secret)
 
     api = tweepy.API(auth)
 
     try:
-        public_tweets = api.home_timeline()
+        #public_tweets = api.home_timeline()
+        user_tweets = api.user_timeline(screen_name = twitter_handle, tweet_mode = 'extended')
     except:
         print "Tweets couldn't be obtained"
         return 0
 
     media_urls = []
 
-    if(len(public_tweets)>0):
+    if(len(user_tweets)>0):
         #print str(len(public_tweets))+" Statuses"
-        for tweet in public_tweets:
+        for tweet in user_tweets:
             #get json(its in unicode) from status and access as dictionary
             json_dict = tweet._json
             #reading the media object from the entities and extended entities object
-            media_list=[]
             #print json.dumps(json_dict, indent = 4)
             #print "\n"
+            media_list=[]
             if(json_dict.get("entities").get("media")!=None):
                 media_list = json_dict.get("entities").get("media")
             elif(json_dict.get("entities").get("media")!=None and json_dict.get("extended_entities")!=None):
@@ -68,5 +69,5 @@ def read_twitter():
                 return 0
 
     else:
-        print "No tweets in Home Timeline"
+        print "No tweets in "+ twitter_handle +"\'s Timeline"
         return 0
