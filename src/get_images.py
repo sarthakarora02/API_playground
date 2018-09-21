@@ -15,7 +15,7 @@ def read_twitter(twitter_handle):
         #public_tweets = api.home_timeline()
         user_tweets = api.user_timeline(screen_name = twitter_handle, tweet_mode = 'extended')
     except:
-        print "Tweets couldn't be obtained"
+        print "Invalid Twitter handle. Rerun with correct screen name"
         return 0
 
     media_urls = []
