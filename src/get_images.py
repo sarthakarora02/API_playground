@@ -60,7 +60,7 @@ def read_twitter(twitter_handle, image_num):
                 i=0
                 print "Downloading Twitter images to ./twitter_images"
                 for img in media_urls:
-                    urllib.urlretrieve(img, "img_%03i.jpg"%i)
+                    urllib.urlretrieve(img, "img_%05i.jpg"%i)
                     i=i+1
                 return new_path
             else:
