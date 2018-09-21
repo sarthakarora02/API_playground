@@ -5,7 +5,7 @@ import os
 import urllib
 import shutil
 
-def read_twitter(twitter_handle):
+def read_twitter(twitter_handle, image_num):
     auth = tweepy.OAuthHandler(twitter_credentials.consumer_key, twitter_credentials.consumer_secret)
     auth.set_access_token(twitter_credentials.access_token, twitter_credentials.access_secret)
 
@@ -13,7 +13,7 @@ def read_twitter(twitter_handle):
 
     try:
         #public_tweets = api.home_timeline()
-        user_tweets = api.user_timeline(screen_name = twitter_handle, tweet_mode = 'extended')
+        user_tweets = api.user_timeline(screen_name = twitter_handle, count = 200, tweet_mode = 'extended')
     except:
         print "Invalid Twitter handle. Rerun with correct screen name"
         return 0
@@ -22,6 +22,7 @@ def read_twitter(twitter_handle):
 
     if(len(user_tweets)>0):
         #print str(len(public_tweets))+" Statuses"
+        num = int(image_num)
         for tweet in user_tweets:
             #get json(its in unicode) from status and access as dictionary
             json_dict = tweet._json
@@ -35,8 +36,9 @@ def read_twitter(twitter_handle):
                 media_list = json_dict.get("extended_entities").get("media")
             #iterating through the media object to look for photos and add media_url to list
             for media in media_list:
-                if(media.get("type") == "photo"):
+                if(media.get("type") == "photo" and num!=0):
                     media_urls.append(media.get("media_url"))
+                    num-=1
 
         if(len(media_urls)>0):
             print(str(len(media_urls))+" Images received from Twitter.\n")
