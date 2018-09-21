@@ -28,11 +28,10 @@ def analyse (path):
     # Process frame level label annotations
     frame_labels = result.annotation_results[0].frame_label_annotations
     for i, frame_label in enumerate(frame_labels):
-        print('Frame label description: {}'.format(
-            frame_label.entity.description))
+        #print('Frame label description: {}'.format(frame_label.entity.description))
+        print('Frame label description: ' + frame_label.entity.description.encode('utf-8'))
         for category_entity in frame_label.category_entities:
-            print('\tLabel category description: {}'.format(
-                category_entity.description))
+            print('\tLabel category description: {}'.format(category_entity.description))
 
         # Each frame_label_annotation has many frames,
         a=0
