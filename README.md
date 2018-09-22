@@ -17,7 +17,7 @@ uses Google's Video Intelligence API to describe the content of the video.
 ## User Guide
 
 * Run using: python main.py
-* images from twitter are stored in the format: img_%03d.jpg
+* images from twitter are stored in the format: img_%05d.jpg
 
 ## Example Output
 
