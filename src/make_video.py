@@ -9,10 +9,10 @@ def make_vid(path):
         code=subprocess.call(['ffmpeg', '-hide_banner', '-loglevel', 'panic','-r', '1', '-i', 'img_%05d.jpg', '-vcodec', 'mpeg4', '-y', 'vid.mp4'])
         print ('Video Process: ',code,'\n')
         if(code==0):
-            print "Video built successfully"
+            print ("Video built successfully")
             return 1
         else:
             return 0
     except Exception as e:
-        print "Error occurred in Video formation. "+str(e)
+        print ("Error occurred in Video formation. "+str(e))
         return 0

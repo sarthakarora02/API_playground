@@ -41,35 +41,35 @@ def read_twitter(twitter_handle, image_num):
                     num-=1
 
         if(len(media_urls)>0):
-            print(str(len(media_urls))+" Images received from Twitter.\n")
+            print (str(len(media_urls))+" Images received from Twitter.\n")
             #New path for downloading images to
             curr_path = os.getcwd()
             new_path = curr_path + '/twitter_images'
             path_made = False
             if not os.path.exists(curr_path+"/twitter_images"):
-                print "Creating path for images\n"
+                print ("Creating path for images\n")
                 os.makedirs(new_path)
                 path_made = True
             else:
-                print "Path already exists. Please Delete ./twitter images before proceeding\n"
+                print ("Path already exists. Please Delete ./twitter images before proceeding\n")
                 return 0
 
             #If required path is made. Download images from media_urls list
             if(path_made):
                 os.chdir(new_path)
                 i=0
-                print "Downloading Twitter images to ./twitter_images"
+                print ("Downloading Twitter images to ./twitter_images")
                 for img in media_urls:
                     urllib.urlretrieve(img, "img_%05i.jpg"%i)
                     i=i+1
                 return new_path
             else:
-                "Path couldn't be created. Try again.\n"
+                print ("Path couldn't be created. Try again.\n")
                 return 0
         else:
-                print("No images received. Try again.\n")
+                print ("No images received. Try again.\n")
                 return 0
 
     else:
-        print "No tweets in "+ twitter_handle +"\'s Timeline"
+        print ("No tweets in "+ twitter_handle +"\'s Timeline")
         return 0

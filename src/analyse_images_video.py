@@ -19,26 +19,26 @@ def analyse (path):
 
     operation = video_client.annotate_video(
         features=features, input_content=input_content, video_context=context)
-    print('\nProcessing video for label annotations:')
-    print('Please wait...')
+    print ('\nProcessing video for label annotations:')
+    print ('Please wait...')
 
     result = operation.result(timeout=90)
-    print('\nFinished processing.')
+    print ('\nFinished processing.')
 
     # Process frame level label annotations
     frame_labels = result.annotation_results[0].frame_label_annotations
     for i, frame_label in enumerate(frame_labels):
         #print('Frame label description: {}'.format(frame_label.entity.description))
-        print('Frame label description: ' + frame_label.entity.description.encode('utf-8'))
+        print ('Frame label description: ' + frame_label.entity.description.encode('utf-8'))
         for category_entity in frame_label.category_entities:
             #print('\tLabel category description: {}'.format(category_entity.description))
-            print('\tLabel category description: ' + category_entity.description.encode('utf-8'))
+            print ('\tLabel category description: ' + category_entity.description.encode('utf-8'))
         # Each frame_label_annotation has many frames,
         a=0
         for frame in frame_label.frames:
             time_offset = (frame.time_offset.seconds +
                            frame.time_offset.nanos / 1e9)
-            print('\tframe time offset: {}s'.format(time_offset))
-            print('\tframe confidence: {}'.format(frame.confidence))
-            print('\n')
+            print ('\tframe time offset: {}s'.format(time_offset))
+            print ('\tframe confidence: {}'.format(frame.confidence))
+            print ('\n')
             a+=1
