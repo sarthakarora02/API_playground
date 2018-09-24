@@ -13,7 +13,7 @@ if __name__ == "__main__":
         if(num>0):
             img_path = get_images.read_twitter(twitter_handle, image_num)
         else:
-            print "Number <= 0. Please enter a positive integer"
+            print ("Number <= 0. Please enter a positive integer")
             exit()
     except ValueError:
        print("Please enter an integer")
@@ -21,11 +21,11 @@ if __name__ == "__main__":
 
     print("Path to images " + str(img_path))
     if(img_path!=0):
-        print "Twitter images downloaded to ./twitter_images"
+        print ("Twitter images downloaded to ./twitter_images")
         val = make_video.make_vid(img_path)
         if (val==1):
             ans = analyse_images_video.analyse(img_path)
         else:
-            print "Video not obtained."
+            print ("Video not obtained.")
     else:
-        print "Error occurred in fetching data from Twitter"
+        print ("Error occurred in fetching data from Twitter")
