@@ -1,0 +1,1353 @@
+Enter twitter handle: BU_Tweets
+Enter the number of images you would like to use: 15  
+15 Images received from Twitter.
+
+Creating path for images
+
+Downloading Twitter images to ./twitter_images
+Path to images /Users/sarthakarora/EC601/twitter_api/src/twitter_images
+Twitter images downloaded to ./twitter_images
+('Video Process: ', 0, '\n')
+Video built successfully
+
+Processing video for label annotations:
+Please wait...
+
+Finished processing.
+Frame label description: student
+	Label category description: person
+	frame time offset: 3.823499s
+	frame confidence: 0.488129794598
+
+
+Frame label description: joint
+	Label category description: human body
+	frame time offset: 3.823499s
+	frame confidence: 0.531746983528
+
+
+Frame label description: online advertising
+	Label category description: advertising
+	frame time offset: 6.647296s
+	frame confidence: 0.638298094273
+
+
+Frame label description: window
+	frame time offset: 2.667942s
+	frame confidence: 0.478035956621
+
+
+Frame label description: mode of transport
+	frame time offset: 4.67842s
+	frame confidence: 0.875005125999
+
+
+	frame time offset: 9.465885s
+	frame confidence: 0.875256478786
+
+
+Frame label description: facade
+	Label category description: building
+	frame time offset: 2.667942s
+	frame confidence: 0.427224189043
+
+
+	frame time offset: 10.33043s
+	frame confidence: 0.531549036503
+
+
+Frame label description: cityscape
+	Label category description: city
+	frame time offset: 4.67842s
+	frame confidence: 0.609863996506
+
+
+Frame label description: landscape
+	Label category description: geographical feature
+	frame time offset: 1.613799s
+	frame confidence: 0.596136689186
+
+
+	frame time offset: 7.815585s
+	frame confidence: 0.498099118471
+
+
+Frame label description: real estate
+	frame time offset: 4.67842s
+	frame confidence: 0.667775511742
+
+
+	frame time offset: 10.33043s
+	frame confidence: 0.695535898209
+
+
+Frame label description: transport
+	frame time offset: 4.67842s
+	frame confidence: 0.857368648052
+
+
+Frame label description: duet
+	Label category description: musician
+	frame time offset: 5.616862s
+	frame confidence: 0.409781873226
+
+
+Frame label description: college
+	Label category description: school
+	frame time offset: 10.33043s
+	frame confidence: 0.456758022308
+
+
+Frame label description: university
+	Label category description: school
+	frame time offset: 10.33043s
+	frame confidence: 0.448381721973
+
+
+Frame label description: campus
+	Label category description: location
+	frame time offset: 10.33043s
+	frame confidence: 0.706419527531
+
+
+Frame label description: public space
+	Label category description: city
+	frame time offset: 1.613799s
+	frame confidence: 0.899743556976
+
+
+	frame time offset: 8.64813s
+	frame confidence: 0.851870715618
+
+
+Frame label description: aerial photography
+	Label category description: photography
+	frame time offset: 4.67842s
+	frame confidence: 0.819649994373
+
+
+Frame label description: material
+	frame time offset: 6.647296s
+	frame confidence: 0.62316185236
+
+
+	frame time offset: 13.500408s
+	frame confidence: 0.587585031986
+
+
+Frame label description: structure
+	frame time offset: 4.67842s
+	frame confidence: 0.8053612113
+
+
+	frame time offset: 9.465885s
+	frame confidence: 0.809319794178
+
+
+Frame label description: product
+	Label category description: person
+	frame time offset: 6.647296s
+	frame confidence: 0.813391625881
+
+
+Frame label description: car
+	Label category description: vehicle
+	frame time offset: 9.465885s
+	frame confidence: 0.416760981083
+
+
+Frame label description: leisure
+	frame time offset: 0.470882s
+	frame confidence: 0.47351744771
+
+
+	frame time offset: 1.613799s
+	frame confidence: 0.852398812771
+
+
+	frame time offset: 2.667942s
+	frame confidence: 0.734361350536
+
+
+Frame label description: corporate headquarters
+	Label category description: building
+	frame time offset: 10.33043s
+	frame confidence: 0.60787653923
+
+
+Frame label description: texture
+	frame time offset: 11.513413s
+	frame confidence: 0.631893932819
+
+
+Frame label description: poster
+	frame time offset: 0.470882s
+	frame confidence: 0.47989320755
+
+
+Frame label description: condominium
+	Label category description: building
+	frame time offset: 4.67842s
+	frame confidence: 0.642797470093
+
+
+	frame time offset: 10.33043s
+	frame confidence: 0.865925610065
+
+
+Frame label description: presentation
+	Label category description: person
+	frame time offset: 0.470882s
+	frame confidence: 0.569266974926
+
+
+	frame time offset: 6.647296s
+	frame confidence: 0.453406780958
+
+
+	frame time offset: 13.500408s
+	frame confidence: 0.62076485157
+
+
+Frame label description: songwriter
+	Label category description: person
+	frame time offset: 5.616862s
+	frame confidence: 0.565505445004
+
+
+Frame label description: rock concert
+	Label category description: concert
+	frame time offset: 5.616862s
+	frame confidence: 0.673269808292
+
+
+Frame label description: wood stain
+	frame time offset: 11.513413s
+	frame confidence: 0.807550013065
+
+
+Frame label description: sports
+	frame time offset: 1.613799s
+	frame confidence: 0.560942411423
+
+
+Frame label description: organization
+	frame time offset: 6.647296s
+	frame confidence: 0.411617428064
+
+
+Frame label description: grass
+	Label category description: plant
+	frame time offset: 1.613799s
+	frame confidence: 0.855194687843
+
+
+	frame time offset: 7.815585s
+	frame confidence: 0.479464352131
+
+
+Frame label description: singer songwriter
+	Label category description: person
+	frame time offset: 5.616862s
+	frame confidence: 0.884517014027
+
+
+Frame label description: laminate flooring
+	frame time offset: 11.513413s
+	frame confidence: 0.678560197353
+
+
+Frame label description: shoe
+	frame time offset: 3.823499s
+	frame confidence: 0.451469957829
+
+
+	frame time offset: 12.523754s
+	frame confidence: 0.409057617188
+
+
+Frame label description: street
+	Label category description: road
+	frame time offset: 2.667942s
+	frame confidence: 0.442050606012
+
+
+	frame time offset: 3.823499s
+	frame confidence: 0.640886008739
+
+
+	frame time offset: 8.64813s
+	frame confidence: 0.693964421749
+
+
+Frame label description: commercial building
+	Label category description: building
+	frame time offset: 10.33043s
+	frame confidence: 0.469754517078
+
+
+Frame label description: graphic design
+	Label category description: artwork
+	frame time offset: 6.647296s
+	frame confidence: 0.442208528519
+
+
+	frame time offset: 13.500408s
+	frame confidence: 0.413091927767
+
+
+Frame label description: standing
+	Label category description: person
+	frame time offset: 12.523754s
+	frame confidence: 0.938096702099
+
+
+Frame label description: diagram
+	frame time offset: 13.500408s
+	frame confidence: 0.56552952528
+
+
+Frame label description: paper product
+	frame time offset: 13.500408s
+	frame confidence: 0.47450119257
+
+
+Frame label description: suburb
+	Label category description: geographical feature
+	frame time offset: 4.67842s
+	frame confidence: 0.88168990612
+
+
+Frame label description: new media
+	Label category description: person
+	frame time offset: 6.647296s
+	frame confidence: 0.414512276649
+
+
+	frame time offset: 13.500408s
+	frame confidence: 0.412669986486
+
+
+Frame label description: website
+	Label category description: weak entity
+	frame time offset: 6.647296s
+	frame confidence: 0.547273516655
+
+
+	frame time offset: 13.500408s
+	frame confidence: 0.652354896069
+
+
+Frame label description: landmark
+	Label category description: geographical feature
+	frame time offset: 4.67842s
+	frame confidence: 0.9161439538
+
+
+	frame time offset: 10.33043s
+	frame confidence: 0.887037098408
+
+
+Frame label description: property
+	frame time offset: 10.33043s
+	frame confidence: 0.882494807243
+
+
+Frame label description: apartment
+	Label category description: building
+	frame time offset: 10.33043s
+	frame confidence: 0.453540623188
+
+
+Frame label description: display advertising
+	Label category description: person
+	frame time offset: 0.470882s
+	frame confidence: 0.589824795723
+
+
+	frame time offset: 6.647296s
+	frame confidence: 0.548573732376
+
+
+Frame label description: social group
+	frame time offset: 3.823499s
+	frame confidence: 0.910329639912
+
+
+Frame label description: professional
+	Label category description: person
+	frame time offset: 3.823499s
+	frame confidence: 0.454872220755
+
+
+	frame time offset: 12.523754s
+	frame confidence: 0.753752589226
+
+
+Frame label description: string instrument
+	frame time offset: 5.616862s
+	frame confidence: 0.773781239986
+
+
+Frame label description: formal wear
+	Label category description: clothing
+	frame time offset: 12.523754s
+	frame confidence: 0.941421151161
+
+
+Frame label description: mixed use
+	Label category description: building
+	frame time offset: 4.67842s
+	frame confidence: 0.5315964818
+
+
+	frame time offset: 10.33043s
+	frame confidence: 0.858007192612
+
+
+Frame label description: black and white
+	Label category description: style
+	frame time offset: 13.500408s
+	frame confidence: 0.622457742691
+
+
+Frame label description: font
+	Label category description: software
+	frame time offset: 0.470882s
+	frame confidence: 0.556789875031
+
+
+	frame time offset: 6.647296s
+	frame confidence: 0.761809706688
+
+
+	frame time offset: 13.500408s
+	frame confidence: 0.925200164318
+
+
+Frame label description: pattern
+	Label category description: design
+	frame time offset: 13.500408s
+	frame confidence: 0.465770453215
+
+
+Frame label description: virtuoso
+	Label category description: person
+	frame time offset: 5.616862s
+	frame confidence: 0.413232654333
+
+
+Frame label description: autumn
+	Label category description: season
+	frame time offset: 1.613799s
+	frame confidence: 0.738017559052
+
+
+Frame label description: physical fitness
+	Label category description: sports
+	frame time offset: 3.823499s
+	frame confidence: 0.594181060791
+
+
+Frame label description: playground
+	Label category description: city
+	frame time offset: 1.613799s
+	frame confidence: 0.771619737148
+
+
+Frame label description: vacation
+	Label category description: event
+	frame time offset: 2.667942s
+	frame confidence: 0.603691279888
+
+
+Frame label description: sky
+	frame time offset: 0.470882s
+	frame confidence: 0.650975465775
+
+
+	frame time offset: 1.613799s
+	frame confidence: 0.644406020641
+
+
+	frame time offset: 4.67842s
+	frame confidence: 0.457181125879
+
+
+	frame time offset: 10.33043s
+	frame confidence: 0.561548054218
+
+
+Frame label description: tourism
+	frame time offset: 0.470882s
+	frame confidence: 0.435098767281
+
+
+	frame time offset: 2.667942s
+	frame confidence: 0.68504524231
+
+
+	frame time offset: 8.64813s
+	frame confidence: 0.48651009798
+
+
+Frame label description: entrepreneur
+	Label category description: person
+	frame time offset: 12.523754s
+	frame confidence: 0.560301661491
+
+
+Frame label description: banner
+	Label category description: advertising
+	frame time offset: 0.470882s
+	frame confidence: 0.515444457531
+
+
+Frame label description: singing
+	Label category description: entertainment
+	Label category description: person
+	frame time offset: 5.616862s
+	frame confidence: 0.917567908764
+
+
+Frame label description: elevation
+	frame time offset: 10.33043s
+	frame confidence: 0.404389679432
+
+
+Frame label description: brand
+	frame time offset: 0.470882s
+	frame confidence: 0.567341148853
+
+
+	frame time offset: 6.647296s
+	frame confidence: 0.587560892105
+
+
+	frame time offset: 13.500408s
+	frame confidence: 0.657978892326
+
+
+Frame label description: pedestrian
+	Label category description: person
+	frame time offset: 8.64813s
+	frame confidence: 0.5245013237
+
+
+Frame label description: outdoor recreation
+	frame time offset: 1.613799s
+	frame confidence: 0.782465934753
+
+
+Frame label description: lumber
+	Label category description: wood
+	frame time offset: 11.513413s
+	frame confidence: 0.752769887447
+
+
+Frame label description: blazer
+	Label category description: jacket
+	frame time offset: 12.523754s
+	frame confidence: 0.585751712322
+
+
+Frame label description: building
+	frame time offset: 2.667942s
+	frame confidence: 0.54956895113
+
+
+	frame time offset: 4.67842s
+	frame confidence: 0.606313765049
+
+
+	frame time offset: 10.33043s
+	frame confidence: 0.842050611973
+
+
+	frame time offset: 12.523754s
+	frame confidence: 0.41691660881
+
+
+Frame label description: plucked string instruments
+	frame time offset: 5.616862s
+	frame confidence: 0.845401406288
+
+
+Frame label description: singer
+	Label category description: person
+	frame time offset: 5.616862s
+	frame confidence: 0.864191889763
+
+
+Frame label description: nature
+	frame time offset: 1.613799s
+	frame confidence: 0.949057102203
+
+
+Frame label description: metropolitan area
+	Label category description: city
+	frame time offset: 4.67842s
+	frame confidence: 0.871497273445
+
+
+	frame time offset: 10.33043s
+	frame confidence: 0.766180157661
+
+
+Frame label description: forest
+	Label category description: geographical feature
+	frame time offset: 7.815585s
+	frame confidence: 0.443624854088
+
+
+Frame label description: signage
+	frame time offset: 0.470882s
+	frame confidence: 0.59324067831
+
+
+	frame time offset: 8.64813s
+	frame confidence: 0.432991296053
+
+
+Frame label description: animal
+	frame time offset: 7.815585s
+	frame confidence: 0.439199745655
+
+
+Frame label description: tower block
+	Label category description: building
+	frame time offset: 10.33043s
+	frame confidence: 0.713604688644
+
+
+Frame label description: electric guitar
+	Label category description: guitar
+	frame time offset: 5.616862s
+	frame confidence: 0.554758071899
+
+
+Frame label description: tower
+	frame time offset: 10.33043s
+	frame confidence: 0.645467102528
+
+
+Frame label description: skyscraper
+	Label category description: building
+	frame time offset: 10.33043s
+	frame confidence: 0.558816373348
+
+
+Frame label description: garapa
+	Label category description: juice
+	frame time offset: 11.513413s
+	frame confidence: 0.420899629593
+
+
+Frame label description: meadow
+	Label category description: geographical feature
+	frame time offset: 1.613799s
+	frame confidence: 0.525828659534
+
+
+Frame label description: businessperson
+	Label category description: person
+	frame time offset: 12.523754s
+	frame confidence: 0.758701086044
+
+
+Frame label description: paper
+	Label category description: material
+	frame time offset: 13.500408s
+	frame confidence: 0.709675073624
+
+
+Frame label description: black
+	frame time offset: 13.500408s
+	frame confidence: 0.957020878792
+
+
+Frame label description: neighbourhood
+	Label category description: geographical feature
+	frame time offset: 10.33043s
+	frame confidence: 0.854890704155
+
+
+Frame label description: courtyard
+	frame time offset: 2.667942s
+	frame confidence: 0.52523201704
+
+
+Frame label description: bass guitar
+	Label category description: guitar
+	frame time offset: 5.616862s
+	frame confidence: 0.710825026035
+
+
+Frame label description: adaptation
+	frame time offset: 0.470882s
+	frame confidence: 0.400770008564
+
+
+Frame label description: line
+	Label category description: shape
+	frame time offset: 6.647296s
+	frame confidence: 0.719181656837
+
+
+	frame time offset: 13.500408s
+	frame confidence: 0.729212224483
+
+
+Frame label description: garden
+	frame time offset: 2.667942s
+	frame confidence: 0.430620461702
+
+
+Frame label description: outdoor structure
+	frame time offset: 2.667942s
+	frame confidence: 0.558024287224
+
+
+Frame label description: audio
+	Label category description: technology
+	frame time offset: 5.616862s
+	frame confidence: 0.470211476088
+
+
+Frame label description: park
+	frame time offset: 1.613799s
+	frame confidence: 0.779607653618
+
+
+Frame label description: estate
+	Label category description: building
+	frame time offset: 10.33043s
+	frame confidence: 0.517573177814
+
+
+Frame label description: floor
+	frame time offset: 11.513413s
+	frame confidence: 0.721344709396
+
+
+Frame label description: performance art
+	Label category description: entertainment
+	frame time offset: 5.616862s
+	frame confidence: 0.77207928896
+
+
+Frame label description: area
+	frame time offset: 6.647296s
+	frame confidence: 0.672009587288
+
+
+Frame label description: tree
+	Label category description: plant
+	frame time offset: 1.613799s
+	frame confidence: 0.930551469326
+
+
+	frame time offset: 2.667942s
+	frame confidence: 0.881436705589
+
+
+	frame time offset: 7.815585s
+	frame confidence: 0.694291293621
+
+
+	frame time offset: 8.64813s
+	frame confidence: 0.784885883331
+
+
+	frame time offset: 10.33043s
+	frame confidence: 0.68160122633
+
+
+Frame label description: multimedia
+	frame time offset: 13.500408s
+	frame confidence: 0.757358431816
+
+
+Frame label description: road
+	frame time offset: 3.823499s
+	frame confidence: 0.59840875864
+
+
+Frame label description: fun
+	frame time offset: 1.613799s
+	frame confidence: 0.691643059254
+
+
+	frame time offset: 2.667942s
+	frame confidence: 0.449877083302
+
+
+	frame time offset: 3.823499s
+	frame confidence: 0.624429523945
+
+
+Frame label description: physical exercise
+	Label category description: sports
+	frame time offset: 3.823499s
+	frame confidence: 0.556955456734
+
+
+Frame label description: recreation
+	frame time offset: 1.613799s
+	frame confidence: 0.76378428936
+
+
+	frame time offset: 2.667942s
+	frame confidence: 0.692611575127
+
+
+	frame time offset: 3.823499s
+	frame confidence: 0.641103446484
+
+
+	frame time offset: 7.815585s
+	frame confidence: 0.560074865818
+
+
+	frame time offset: 8.64813s
+	frame confidence: 0.500368475914
+
+
+Frame label description: urban design
+	Label category description: person
+	frame time offset: 4.67842s
+	frame confidence: 0.747283697128
+
+
+Frame label description: residential area
+	Label category description: geographical feature
+	frame time offset: 4.67842s
+	frame confidence: 0.861022830009
+
+
+	frame time offset: 10.33043s
+	frame confidence: 0.749629259109
+
+
+Frame label description: musical ensemble
+	Label category description: musician
+	frame time offset: 5.616862s
+	frame confidence: 0.416236311197
+
+
+Frame label description: advertising
+	frame time offset: 0.470882s
+	frame confidence: 0.898148238659
+
+
+	frame time offset: 6.647296s
+	frame confidence: 0.629310846329
+
+
+	frame time offset: 8.64813s
+	frame confidence: 0.834269881248
+
+
+Frame label description: dance
+	Label category description: event
+	frame time offset: 3.823499s
+	frame confidence: 0.485819637775
+
+
+Frame label description: performing arts
+	Label category description: entertainment
+	frame time offset: 3.823499s
+	frame confidence: 0.581258356571
+
+
+	frame time offset: 5.616862s
+	frame confidence: 0.871463239193
+
+
+Frame label description: world
+	frame time offset: 0.470882s
+	frame confidence: 0.49836820364
+
+
+	frame time offset: 4.67842s
+	frame confidence: 0.420070439577
+
+
+Frame label description: event
+	frame time offset: 3.823499s
+	frame confidence: 0.623352050781
+
+
+	frame time offset: 5.616862s
+	frame confidence: 0.652832090855
+
+
+Frame label description: stage
+	Label category description: location
+	frame time offset: 5.616862s
+	frame confidence: 0.905816972256
+
+
+Frame label description: string instrument accessory
+	frame time offset: 5.616862s
+	frame confidence: 0.586096584797
+
+
+Frame label description: screenshot
+	frame time offset: 6.647296s
+	frame confidence: 0.400358587503
+
+
+	frame time offset: 13.500408s
+	frame confidence: 0.792909324169
+
+
+Frame label description: performance
+	Label category description: event
+	Label category description: entertainment
+	frame time offset: 5.616862s
+	frame confidence: 0.94794344902
+
+
+Frame label description: tours
+	Label category description: tourism
+	frame time offset: 10.33043s
+	frame confidence: 0.408821076155
+
+
+Frame label description: business
+	Label category description: organization
+	frame time offset: 12.523754s
+	frame confidence: 0.593399822712
+
+
+Frame label description: computer program
+	Label category description: computer
+	Label category description: software
+	frame time offset: 13.500408s
+	frame confidence: 0.49441999197
+
+
+Frame label description: rectangle
+	Label category description: shape
+	frame time offset: 13.500408s
+	frame confidence: 0.541218459606
+
+
+Frame label description: city
+	Label category description: geographical feature
+	frame time offset: 1.613799s
+	frame confidence: 0.763653993607
+
+
+	frame time offset: 2.667942s
+	frame confidence: 0.610574483871
+
+
+	frame time offset: 4.67842s
+	frame confidence: 0.926768362522
+
+
+	frame time offset: 8.64813s
+	frame confidence: 0.755374968052
+
+
+	frame time offset: 10.33043s
+	frame confidence: 0.795858800411
+
+
+Frame label description: angle
+	frame time offset: 13.500408s
+	frame confidence: 0.546509504318
+
+
+Frame label description: guitar
+	frame time offset: 5.616862s
+	frame confidence: 0.890080213547
+
+
+Frame label description: bird's eye view
+	Label category description: landscape
+	frame time offset: 4.67842s
+	frame confidence: 0.730069220066
+
+
+Frame label description: company
+	Label category description: organization
+	frame time offset: 0.470882s
+	frame confidence: 0.427862465382
+
+
+	frame time offset: 6.647296s
+	frame confidence: 0.464607447386
+
+
+Frame label description: software
+	frame time offset: 6.647296s
+	frame confidence: 0.659509301186
+
+
+	frame time offset: 13.500408s
+	frame confidence: 0.638354957104
+
+
+Frame label description: roof
+	frame time offset: 4.67842s
+	frame confidence: 0.574611127377
+
+
+Frame label description: song
+	Label category description: music
+	frame time offset: 5.616862s
+	frame confidence: 0.685826659203
+
+
+Frame label description: bassist
+	Label category description: person
+	frame time offset: 5.616862s
+	frame confidence: 0.72384428978
+
+
+Frame label description: hardwood
+	Label category description: wood
+	frame time offset: 11.513413s
+	frame confidence: 0.813270032406
+
+
+Frame label description: skyline
+	Label category description: city
+	frame time offset: 4.67842s
+	frame confidence: 0.42448413372
+
+
+Frame label description: profession
+	Label category description: person
+	frame time offset: 5.616862s
+	frame confidence: 0.638329744339
+
+
+Frame label description: number
+	Label category description: symbol
+	frame time offset: 6.647296s
+	frame confidence: 0.447674036026
+
+
+	frame time offset: 13.500408s
+	frame confidence: 0.505508422852
+
+
+Frame label description: logo
+	Label category description: graphics
+	frame time offset: 6.647296s
+	frame confidence: 0.419235795736
+
+
+	frame time offset: 13.500408s
+	frame confidence: 0.459108889103
+
+
+Frame label description: automotive exterior
+	frame time offset: 9.465885s
+	frame confidence: 0.546335399151
+
+
+Frame label description: jungle
+	Label category description: geographical feature
+	frame time offset: 7.815585s
+	frame confidence: 0.624561548233
+
+
+Frame label description: vehicle
+	frame time offset: 8.64813s
+	frame confidence: 0.501042842865
+
+
+Frame label description: plank
+	Label category description: wood
+	frame time offset: 11.513413s
+	frame confidence: 0.690257787704
+
+
+Frame label description: leaf
+	Label category description: plant
+	frame time offset: 1.613799s
+	frame confidence: 0.90401238203
+
+
+Frame label description: varnish
+	Label category description: material
+	frame time offset: 11.513413s
+	frame confidence: 0.561497271061
+
+
+Frame label description: woody plant
+	Label category description: plant
+	frame time offset: 1.613799s
+	frame confidence: 0.896565198898
+
+
+Frame label description: plaza
+	Label category description: city
+	frame time offset: 10.33043s
+	frame confidence: 0.613290607929
+
+
+Frame label description: machine
+	frame time offset: 9.465885s
+	frame confidence: 0.635413944721
+
+
+Frame label description: product
+	frame time offset: 6.647296s
+	frame confidence: 0.657000184059
+
+
+	frame time offset: 9.465885s
+	frame confidence: 0.580845892429
+
+
+	frame time offset: 13.500408s
+	frame confidence: 0.708091020584
+
+
+Frame label description: outdoor play equipment
+	frame time offset: 1.613799s
+	frame confidence: 0.472316682339
+
+
+Frame label description: musical instrument
+	frame time offset: 5.616862s
+	frame confidence: 0.670823574066
+
+
+Frame label description: computer wallpaper
+	Label category description: software
+	frame time offset: 13.500408s
+	frame confidence: 0.482612043619
+
+
+Frame label description: adventure
+	frame time offset: 7.815585s
+	frame confidence: 0.526765823364
+
+
+Frame label description: urban area
+	Label category description: city
+	frame time offset: 4.67842s
+	frame confidence: 0.944969892502
+
+
+Frame label description: flooring
+	frame time offset: 11.513413s
+	frame confidence: 0.803770363331
+
+
+Frame label description: concert
+	Label category description: performance
+	frame time offset: 5.616862s
+	frame confidence: 0.826860010624
+
+
+Frame label description: outerwear
+	Label category description: clothing
+	frame time offset: 12.523754s
+	frame confidence: 0.72715729475
+
+
+Frame label description: guitarist
+	Label category description: musician
+	frame time offset: 5.616862s
+	frame confidence: 0.93687838316
+
+
+Frame label description: string instrument
+	frame time offset: 5.616862s
+	frame confidence: 0.847436845303
+
+
+Frame label description: music artist
+	Label category description: person
+	frame time offset: 5.616862s
+	frame confidence: 0.847618579865
+
+
+Frame label description: spring
+	Label category description: season
+	frame time offset: 1.613799s
+	frame confidence: 0.570396006107
+
+
+Frame label description: music venue
+	Label category description: location
+	frame time offset: 5.616862s
+	frame confidence: 0.468609690666
+
+
+Frame label description: guitar accessory
+	frame time offset: 5.616862s
+	frame confidence: 0.462407976389
+
+
+Frame label description: suit
+	Label category description: clothing
+	frame time offset: 12.523754s
+	frame confidence: 0.980883419514
+
+
+Frame label description: musical theatre
+	Label category description: theatre
+	frame time offset: 5.616862s
+	frame confidence: 0.526663184166
+
+
+Frame label description: salaryman
+	Label category description: person
+	frame time offset: 12.523754s
+	frame confidence: 0.478104740381
+
+
+Frame label description: document
+	Label category description: paper
+	frame time offset: 13.500408s
+	frame confidence: 0.741041719913
+
+
+Frame label description: tuxedo
+	Label category description: suit
+	frame time offset: 12.523754s
+	frame confidence: 0.818486332893
+
+
+Frame label description: design
+	frame time offset: 13.500408s
+	frame confidence: 0.706679821014
+
+
+Frame label description: media
+	frame time offset: 0.470882s
+	frame confidence: 0.408940285444
+
+
+	frame time offset: 6.647296s
+	frame confidence: 0.47209367156
+
+
+	frame time offset: 13.500408s
+	frame confidence: 0.627755880356
+
+
+Frame label description: business executive
+	Label category description: person
+	frame time offset: 12.523754s
+	frame confidence: 0.515189170837
+
+
+Frame label description: graphics
+	Label category description: artwork
+	frame time offset: 13.500408s
+	frame confidence: 0.4739805758
+
+
+Frame label description: white collar worker
+	Label category description: person
+	frame time offset: 12.523754s
+	frame confidence: 0.749479711056
+
+
+Frame label description: downtown
+	Label category description: city
+	frame time offset: 4.67842s
+	frame confidence: 0.663932979107
+
+
+	frame time offset: 10.33043s
+	frame confidence: 0.715948700905
+
+
+Frame label description: vertebrate
+	Label category description: animal
+	frame time offset: 7.815585s
+	frame confidence: 0.903703629971
+
+
+Frame label description: wood
+	frame time offset: 11.513413s
+	frame confidence: 0.940634906292
+
+
+Frame label description: wood flooring
+	frame time offset: 11.513413s
+	frame confidence: 0.788495242596
+
+
+Frame label description: plant
+	frame time offset: 1.613799s
+	frame confidence: 0.952315807343
+
+
+	frame time offset: 2.667942s
+	frame confidence: 0.786552488804
+
+
+	frame time offset: 7.815585s
+	frame confidence: 0.718215823174
+
+
+	frame time offset: 8.64813s
+	frame confidence: 0.64179456234
+
+
+Frame label description: writing
+	frame time offset: 13.500408s
+	frame confidence: 0.43091750145
+
+
+Frame label description: square
+	Label category description: shape
+	frame time offset: 13.500408s
+	frame confidence: 0.4406478405
+
+
+Frame label description: metropolis
+	Label category description: city
+	frame time offset: 4.67842s
+	frame confidence: 0.85835391283
+
+
+	frame time offset: 10.33043s
+	frame confidence: 0.574195683002
+
+
+Frame label description: plywood
+	Label category description: wood
+	frame time offset: 11.513413s
+	frame confidence: 0.695874035358
+
+
+Frame label description: entertainment
+	frame time offset: 5.616862s
+	frame confidence: 0.879420638084
+
+
+Frame label description: text
+	frame time offset: 0.470882s
+	frame confidence: 0.900119066238
+
+
+	frame time offset: 6.647296s
+	frame confidence: 0.93477678299
+
+
+	frame time offset: 13.500408s
+	frame confidence: 0.975395321846
+
+
+Frame label description: lawn
+	frame time offset: 1.613799s
+	frame confidence: 0.779520690441
+
+
+Frame label description: flag
+	frame time offset: 0.470882s
+	frame confidence: 0.539341390133
+
