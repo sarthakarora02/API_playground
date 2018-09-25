@@ -5,7 +5,7 @@ Enter the number of images you would like to use: 15
 Creating path for images
 
 Downloading Twitter images to ./twitter_images
-Path to images /Users/sarthakarora/EC601/twitter_api/src/twitter_images
+Path to images ./twitter_images
 Twitter images downloaded to ./twitter_images
 ('Video Process: ', 0, '\n')
 Video built successfully
