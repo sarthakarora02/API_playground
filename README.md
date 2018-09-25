@@ -21,7 +21,11 @@ uses Google's Video Intelligence API to describe the content of the video.
 
 ## Example Output
 
-601_Mini_project_APIs/src/Screen Shot 2018-09-18 at 11.02.56 PM.png
+* 601_Mini_project_APIs/src/Screen Shot 2018-09-18 at 11.02.56 PM.png
+* the output I receive on the command line for the handle BU_Tweets when asked for 15 images.
+  https://github.com/sarthakarora02/601_Mini_project_APIs/blob/master/src/demo_output.txt
+* the downloaded images and the video formed through FFMPEG.
+  https://github.com/sarthakarora02/601_Mini_project_APIs/tree/master/src/twitter_images
 
 ## References
 
