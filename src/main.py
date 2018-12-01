@@ -5,8 +5,8 @@ import sys
 
 if __name__ == "__main__":
 
-    twitter_handle = raw_input("Enter twitter handle: ")
-    image_num = raw_input("Enter the number of images you would like to use: ")
+    twitter_handle = input("Enter twitter handle: ")
+    image_num = input("Enter the number of images you would like to use: ")
     img_path = ""
     try:
         num = int(image_num)
@@ -29,3 +29,5 @@ if __name__ == "__main__":
             print ("Video not obtained.")
     else:
         print ("Error occurred in fetching data from Twitter")
+
+    

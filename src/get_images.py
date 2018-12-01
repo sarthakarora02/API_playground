@@ -2,7 +2,7 @@ import tweepy
 import twitter_credentials
 import json
 import os
-import urllib
+import urllib.request
 import shutil
 
 def read_twitter(twitter_handle, image_num):
@@ -15,7 +15,7 @@ def read_twitter(twitter_handle, image_num):
         #public_tweets = api.home_timeline()
         user_tweets = api.user_timeline(screen_name = twitter_handle, count = 200, tweet_mode = 'extended')
     except:
-        print "Invalid Twitter handle. Rerun with correct screen name"
+        print ("Invalid Twitter handle. Rerun with correct screen name")
         return 0
 
     media_urls = []
@@ -60,7 +60,7 @@ def read_twitter(twitter_handle, image_num):
                 i=0
                 print ("Downloading Twitter images to ./twitter_images")
                 for img in media_urls:
-                    urllib.urlretrieve(img, "img_%05i.jpg"%i)
+                    urllib.request.urlretrieve(img, "img_%05i.jpg"%i)
                     i=i+1
                 return new_path
             else:
