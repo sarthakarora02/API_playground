@@ -10,6 +10,18 @@ if __name__ == "__main__":
     twitter_handle = input("Enter twitter handle: ")
     image_num = input("Enter the number of images you would like to use: ")
     img_path = ""
+
+    mydb = mysql_connection2.connect()
+    mycursor = mydb.cursor()
+
+    sql = "INSERT INTO session (twitter_handle, num_images, img_path, vid_path, login_time) VALUES (%s, %s, %s, %s, %s);"
+    val = (twitter_handle, int(image_num), "./twitter_images", "./twitter_images", str(datetime.datetime.now()))
+    mycursor.execute(sql, val)
+
+    mydb.commit()
+
+    print(mycursor.rowcount, "Session record inserted.")
+
     try:
         num = int(image_num)
         if(num>0):
@@ -31,14 +43,3 @@ if __name__ == "__main__":
             print ("Video not obtained.")
     else:
         print ("Error occurred in fetching data from Twitter")
-
-    mydb = mysql_connection2.connect()
-    mycursor = mydb.cursor()
-
-    sql = "INSERT INTO session (twitter_handle, num_images, img_path, vid_path, login_time) VALUES (%s, %s, %s, %s, %s);"
-    val = (twitter_handle, int(image_num), "./twitter_images", "./twitter_images", str(datetime.datetime.now()))
-    mycursor.execute(sql, val)
-
-    mydb.commit()
-
-    print(mycursor.rowcount, "record inserted.")
