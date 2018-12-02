@@ -12,8 +12,8 @@ if __name__ == "__main__":
     image_num = input("Enter the number of images you would like to use: ")
     img_path = ""
 
-    mydb = mysql_connection2.connect()
-    mycursor = mydb.cursor()
+    mydb1 = mysql_connection2.connect()
+    mycursor = mydb1.cursor()
 
     sql = "INSERT INTO session (twitter_handle, num_images, img_path, vid_path, login_time) VALUES (%s, %s, %s, %s, %s);"
     val = (twitter_handle, int(image_num), "./twitter_images", "./twitter_images", str(datetime.datetime.now()))
@@ -24,8 +24,8 @@ if __name__ == "__main__":
     print(mycursor.rowcount, "MySQL: Session record inserted.")
 
     myclient = pymongo.MongoClient("mongodb://localhost:27017/")
-    mydb = myclient["twitter_db"]
-    mycol = mydb["session"]
+    mydb2 = myclient["twitter_db"]
+    mycol = mydb2["session"]
     doc = { "twitter_handle": twitter_handle, "num_images": image_num, "img_path": "./twitter_images", "vid_path": "./twitter_images", "login_time": str(datetime.datetime.now())}
     x = mycol.insert_one(doc)
 

@@ -76,7 +76,7 @@ def analyse (path):
 
         frame_desc = '{}'.format(frame_label.entity.description)
 
-        mydb = mysql_connection2.connect()
+        mydb1 = mysql_connection2.connect()
         mycursor = mydb.cursor()
         sql2 = "INSERT INTO descriptor (session_id, frame_label_desc, label_cat_desc, frame_time_offset, frame_confidence, login_time) VALUES (%s, %s, %s, %s, %s, %s);"
         val2 = (res[0][0], frame_desc, cat_desc, frame_time_offset, frame_confidence, str(datetime.datetime.now()))
@@ -87,8 +87,8 @@ def analyse (path):
         print(mycursor.rowcount, "Descriptor record inserted.")
 
         myclient = pymongo.MongoClient("mongodb://localhost:27017/")
-        mydb = myclient["twitter_db"]
-        mycol = mydb["descriptor"]
+        mydb2 = myclient["twitter_db"]
+        mycol = mydb2["descriptor"]
         doc = { "session_id": last_id, "frame_label_desc": frame_desc, "label_cat_desc": cat_desc, "frame_time_offset": frame_time_offset, "frame_confidence": frame_confidence, "login_time": str(datetime.datetime.now())}
         x = mycol.insert_one(doc)
 
