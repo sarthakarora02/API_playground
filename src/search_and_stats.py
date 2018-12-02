@@ -2,6 +2,7 @@ import mysql_connection2
 import pymongo
 import numpy as np
 import matplotlib.pyplot as plt
+from collections import Counter
 
 
 def search_fn_mysql(query):
@@ -93,11 +94,53 @@ def stat_mongodb():
 
     plt.show()
 
+def pop_desc_mysql():
+    mydb = mysql_connection2.connect()
+    mycursor = mydb.cursor()
+
+    sql1 = "SELECT frame_label_desc, label_cat_desc FROM descriptor;"
+
+    mycursor.execute(sql1)
+    myresult = mycursor.fetchall()
+    f_desc = []
+    c_desc = []
+    for x in myresult:
+        f_desc.append(x[0])
+        c_desc.append(x[1])
+
+    print("MySQL")
+    print("Top 5 frame label descriptors")
+    for x in Counter(f_desc).most_common(5):
+        print(x[0], " : ",x[1])
+    print("Top 5 category label descriptors")
+    for y in Counter(c_desc).most_common(5):
+        if(y[0] != ''):
+            print(y[0], " : ",y[1])
+
+def pop_desc_mongodb():
+    myclient = pymongo.MongoClient("mongodb://localhost:27017/")
+    mydb = myclient["twitter_db"]
+    mycol1 = mydb["descriptor"]
+    fetch_res = mycol1.find({},{ "frame_label_desc": 1 , "label_cat_desc": 1 })
+    f_desc = []
+    c_desc = []
+    for x in fetch_res:
+        f_desc.append(x['frame_label_desc'])
+        c_desc.append(x['label_cat_desc'])
+
+    print("MongoDB")
+    print("Top 5 frame label descriptors")
+    for x in Counter(f_desc).most_common(5):
+        print(x[0], " : ",x[1])
+    print("Top 5 category label descriptors")
+    for y in Counter(c_desc).most_common(5):
+        if(y[0] != ''):
+            print(y[0], " : ",y[1])
 
 
 if __name__ == "__main__":
     db = input("[1] MySQL    [2] MongoDB: ")
-    operation = input("[a] Search    [b] Statistics: ")
+    operation = input("[a] Search    [b] Statistics    [c] Popular descriptor: ")
     if db == '1' and operation == 'a':
         search_fn_mysql(query)
     elif db == '2' and operation == 'a':
@@ -106,3 +149,7 @@ if __name__ == "__main__":
         stat_mysql()
     elif db == '2' and operation == 'b':
         stat_mongodb()
+    elif db == '1' and operation == 'c':
+        pop_desc_mysql()
+    elif db == '2' and operation == 'c':
+        pop_desc_mongodb()
