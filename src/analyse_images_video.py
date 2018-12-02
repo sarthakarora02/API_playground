@@ -4,6 +4,7 @@ import os
 from google.cloud import videointelligence
 import mysql_connection2
 import datetime
+import pymongo
 
 def analyse (path):
 
@@ -14,6 +15,16 @@ def analyse (path):
     mycursor.execute(sql)
     res = mycursor.fetchall()
     # print("Fetch result:", result[0][0])
+
+    myclient3 = pymongo.MongoClient("mongodb://localhost:27017/")
+    mydb3 = myclient3["twitter_db"]
+    mycol3 = mydb3["session"]
+    last_id = mycol3.find({},{ "_id": 1 }).sort("login_time")[mycol3.find().count()-1]["_id"]
+    # myquery = {}
+    # doc3 = { "session_id": "<TODO>", "frame_label_desc": frame_desc, "label_cat_desc": cat_desc, "frame_time_offset": frame_time_offset, "frame_confidence": frame_confidence, "login_time": str(datetime.datetime.now())}
+    # x3 = mycol3.insert_one(doc)
+
+    # print(x3.inserted_id, "MongoDB: Descriptor document inserted.")
 
     os.chdir(path)
     os.chdir("../")
@@ -65,10 +76,20 @@ def analyse (path):
 
         frame_desc = '{}'.format(frame_label.entity.description)
 
+        mydb = mysql_connection2.connect()
+        mycursor = mydb.cursor()
         sql2 = "INSERT INTO descriptor (session_id, frame_label_desc, label_cat_desc, frame_time_offset, frame_confidence, login_time) VALUES (%s, %s, %s, %s, %s, %s);"
-        val2 = (res[0][0], cat_desc, frame_desc, frame_time_offset, frame_confidence, str(datetime.datetime.now()))
+        val2 = (res[0][0], frame_desc, cat_desc, frame_time_offset, frame_confidence, str(datetime.datetime.now()))
         mycursor.execute(sql2, val2)
 
         mydb.commit()
 
         print(mycursor.rowcount, "Descriptor record inserted.")
+
+        myclient = pymongo.MongoClient("mongodb://localhost:27017/")
+        mydb = myclient["twitter_db"]
+        mycol = mydb["descriptor"]
+        doc = { "session_id": last_id, "frame_label_desc": frame_desc, "label_cat_desc": cat_desc, "frame_time_offset": frame_time_offset, "frame_confidence": frame_confidence, "login_time": str(datetime.datetime.now())}
+        x = mycol.insert_one(doc)
+
+        print(x.inserted_id, "MongoDB: Descriptor document inserted.")

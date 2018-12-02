@@ -4,6 +4,7 @@ import analyse_images_video
 import sys
 import mysql_connection2
 import datetime
+import pymongo
 
 if __name__ == "__main__":
 
@@ -20,7 +21,15 @@ if __name__ == "__main__":
 
     mydb.commit()
 
-    print(mycursor.rowcount, "Session record inserted.")
+    print(mycursor.rowcount, "MySQL: Session record inserted.")
+
+    myclient = pymongo.MongoClient("mongodb://localhost:27017/")
+    mydb = myclient["twitter_db"]
+    mycol = mydb["session"]
+    doc = { "twitter_handle": twitter_handle, "num_images": image_num, "img_path": "./twitter_images", "vid_path": "./twitter_images", "login_time": str(datetime.datetime.now())}
+    x = mycol.insert_one(doc)
+
+    print(x.inserted_id, "MongoDB: Session document inserted.")
 
     try:
         num = int(image_num)
