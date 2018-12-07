@@ -1,10 +1,10 @@
 # 601_Mini_project_APIs
 EC 601 Mini Project- A python project that downloads images from a particular twitter handle, converts them to a video and 
-uses Google's Video Intelligence API to describe the content of the video.
+uses Google's Video Intelligence API to describe the content of the video. Databse Integration includes MySQL and MongoDB
 
 ## Built using
 
-* Python 2.7.10 
+* Python 3.6.6 
 * Tweepy 3.6.0
 * FFMPEG version 4.0.2
 * google-cloud-videointelligence 1.3.0
@@ -18,6 +18,23 @@ uses Google's Video Intelligence API to describe the content of the video.
 
 * Run using: python main.py
 * images from twitter are stored in the format: img_%05d.jpg
+
+## Scripts
+
+### search_and_stats.py 
+* Search for descriptor/label and view corresponding list of handles
+* Bar chart for Images per feed/handle
+* View most occurring descriptor
+
+### make_video.py 
+* Use ffmpeg to get video of images
+
+### analyse_images_video.py 
+* Run video intelligence API over the video to get labels
+* Store labels in databases(MySQL and MongoDB)
+
+### create_database_mongodb.py and create_database_mysql.py
+* Database and Table/Collection creation
 
 ## Example Output
 
